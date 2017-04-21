@@ -1,0 +1,18 @@
+html {
+  background-color: #87CEFF;
+}
+
+form {
+  text-align: center;
+  font-size: 22px;
+}
+
+button {
+  margin: auto;
+  display: block;
+  font-size: 20px;
+}
+
+#one, #two, #three, #four, #five, #six {
+  text-align: center;
+}
