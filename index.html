@@ -9,21 +9,33 @@
 
 <body>
 </br>
-  <form id="headertype"> Select the header type for your text: </br>
-    <input type="radio" name="header" value="H1" id="header_1"> H1
+  <form id="headertype"> Select the header size you want for your text: </br>
+    <input type="radio" name="header" value="H1" id="header_1"> H1 <span style="font-size:25px">(largest)</span>
     <input type="radio" name="header" value="H2" id="header_2"> H2
     <input type="radio" name="header" value="H3" id="header_3"> H3
     <input type="radio" name="header" value="H4" id="header_4"> H4
     <input type="radio" name="header" value="H5" id="header_5"> H5
-    <input type="radio" name="header" value="H6" id="header_6"> H6
+    <input type="radio" name="header" value="H6" id="header_6"> H6 <span style="font-size:14px">(smallest)</span>
   </form>
 
-  <form id="colortype"> Select the color you want for your text:
-    <
+  <form id="colortype"> Select the color you want for your text: </br>
+    <input type="radio" name="color" value="Red" id="red_check"> <span style="color:red">Red</span>
+    <input type="radio" name="color" value="Orange" id="orange_check"> <span style="color:orange">Orange</span>
+    <input type="radio" name="color" value="Yellow" id="yellow_check"> <span style="color:yellow">Yellow</span>
+    <input type="radio" name="color" value="Green" id="green_check"> <span style="color:green">Green</span>
+    <input type="radio" name="color" value="Blue" id="blue_check"> <span style="color:blue">Blue</span>
+    <input type="radio" name="color" value="Purple" id="purple_check"> <span style="color:purple">Purple</span>
+  </form>
+
+  <form id="stylechanger"> Select any extra styles you want for your text: </br>
+    <input type="checkbox" name="boldcheck" value="Bold" id="bold_check"> <b>Bold</b>
+    <input type="checkbox" name="italicscheck" value="Italics" id="italics_check"> <i>Italics</i>
+    <input type="checkbox" name="underlinecheck" value="Underline" id="underline_check"> <u>Underline</u>
+    <input type="checkbox" name="strikethroughcheck" value="Strikethrough" id="strikethrough_check"> <strike>Strikethrough</strike>
   </form>
 
   <form id="displaytext">
-    Enter text to display: <input name="name" type="text" size="20">
+    Enter text to display: </br><input id="inputbox" name="name" type="text" style="height:100px" size="50">
   </form>
 
   <button onclick="generateText()">Generate the text</button>
