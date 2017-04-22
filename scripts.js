@@ -1,25 +1,22 @@
 function generateText() {
-  document.getElementById("one").innerHTML = "";
-  document.getElementById("two").innerHTML = "";
-  document.getElementById("three").innerHTML = "";
-  document.getElementById("four").innerHTML = "";
-  document.getElementById("five").innerHTML = "";
-  document.getElementById("six").innerHTML = "";
+  document.getElementById("label").innerHTML = "";
 
   var text = document.getElementById("displaytext");
   var userText = text.elements["name"].value;
 
+  document.getElementById("label").innerHTML = userText;
+
   if (document.getElementById("header_1").checked) {
-    document.getElementById("one").innerHTML = userText;
+    document.getElementById("label").style.font = "bold 2em serif";
   } else if (document.getElementById("header_2").checked) {
-    document.getElementById("two").innerHTML = userText;
+    document.getElementById("label").style.font = "bold 1.5em serif";
   } else if (document.getElementById("header_3").checked) {
-    document.getElementById("three").innerHTML = userText;
+    document.getElementById("label").style.font = "bold 1.17em serif";
   } else if (document.getElementById("header_4").checked) {
-    document.getElementById("four").innerHTML = userText;
+    document.getElementById("label").innerHTML = "bold 1em serif";
   } else if (document.getElementById("header_5").checked) {
-    document.getElementById("five").innerHTML = userText;
+    document.getElementById("label").style.font = "bold .83em serif";
   } else if (document.getElementById("header_6").checked) {
-    document.getElementById("six").innerHTML = userText;
+    document.getElementById("label").style.font = "bold .67em serif";
   }
 }
